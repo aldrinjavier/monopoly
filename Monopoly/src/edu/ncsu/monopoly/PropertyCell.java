@@ -41,14 +41,14 @@ public class PropertyCell extends Cell {
 		return rentToCharge;
 	}
 
-	public void playAction() {
-		Player currentPlayer = null;
-		if(!isAvailable()) {
-			currentPlayer = GameMaster.instance().getCurrentPlayer();
-			if(theOwner != currentPlayer) {
-				currentPlayer.payRentTo(theOwner, getRent());
-			}
-		}
+	public boolean playAction(String msg) {
+		boolean strFlag = false;
+    	if(msg != null){
+    		strFlag = true;
+    	}else{
+    		strFlag = false;
+    	}
+    	return strFlag;
 	}
 
 	public void setColorGroup(String colorGroup) {

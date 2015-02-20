@@ -6,7 +6,13 @@ public class JailCell extends Cell {
 		setName("Jail");
 	}
 	
-	public void playAction() {
-		
+	public boolean playAction(String msg) {
+		boolean strFlag = false;
+    	if(msg != null){
+    		strFlag = true;
+    	}else{
+    		strFlag = false;
+    	}
+    	return strFlag;
 	}
 }
