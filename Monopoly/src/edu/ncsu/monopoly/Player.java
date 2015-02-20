@@ -177,20 +177,24 @@ public class Player {
 	
 	public void purchase() {
 		if(getPosition().isAvailable()) {
-			Cell c = getPosition();
-			c.setAvailable(false);
-			if(c instanceof PropertyCell) {
-				PropertyCell cell = (PropertyCell)c;
-				purchaseProperty(cell);
-			}
-			if(c instanceof RailRoadCell) {
-				RailRoadCell cell = (RailRoadCell)c;
-				purchaseRailRoad(cell);
-			}
-			if(c instanceof UtilityCell) {
-				Cell cell = (Cell)c;
-				purchaseUtility(cell);
-			}
+			processCell();
+		}
+	}
+
+	private void processCell() {
+		Cell c = getPosition();
+		c.setAvailable(false);
+		if(c instanceof PropertyCell) {
+			PropertyCell cell = (PropertyCell)c;
+			purchaseProperty(cell);
+		}
+		if(c instanceof RailRoadCell) {
+			RailRoadCell cell = (RailRoadCell)c;
+			purchaseRailRoad(cell);
+		}
+		if(c instanceof UtilityCell) {
+			Cell cell = (Cell)c;
+			purchaseUtility(cell);
 		}
 	}
 	
