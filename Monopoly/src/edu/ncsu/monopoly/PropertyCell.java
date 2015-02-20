@@ -41,16 +41,6 @@ public class PropertyCell extends Cell {
 		return rentToCharge;
 	}
 
-	public boolean playAction(String msg) {
-		boolean strFlag = false;
-    	if(msg != null){
-    		strFlag = true;
-    	}else{
-    		strFlag = false;
-    	}
-    	return strFlag;
-	}
-
 	public void setColorGroup(String colorGroup) {
 		this.colorGroup = colorGroup;
 	}

@@ -188,7 +188,7 @@ public class Player {
 				purchaseRailRoad(cell);
 			}
 			if(c instanceof UtilityCell) {
-				UtilityCell cell = (UtilityCell)c;
+				Cell cell = (Cell)c;
 				purchaseUtility(cell);
 			}
 		}
@@ -217,7 +217,7 @@ public class Player {
 	    buyProperty(cell, cell.getPrice());
 	}
 
-	private void purchaseUtility(UtilityCell cell) {
+	private void purchaseUtility(Cell cell) {
 	    buyProperty(cell, cell.getPrice());
 	}
 

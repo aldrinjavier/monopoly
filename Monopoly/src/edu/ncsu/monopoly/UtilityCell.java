@@ -21,14 +21,4 @@ public class UtilityCell extends Cell {
 		}
 		return 0;
 	}
-
-	public boolean playAction(String msg) {
-		boolean strFlag = false;
-    	if(msg != null){
-    		strFlag = true;
-    	}else{
-    		strFlag = false;
-    	}
-    	return strFlag;
-	}
 }

@@ -20,14 +20,4 @@ public class RailRoadCell extends Cell {
 	public int getRent() {
 		return RailRoadCell.baseRent * (int)Math.pow(2, theOwner.numberOfRR() - 1);
 	}
-	
-	public boolean playAction(String msg) {
-		boolean strFlag = false;
-    	if(msg != null){
-    		strFlag = true;
-    	}else{
-    		strFlag = false;
-    	}
-    	return strFlag;
-	}
 }

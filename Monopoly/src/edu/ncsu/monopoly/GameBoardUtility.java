@@ -12,8 +12,8 @@ public class GameBoardUtility extends GameBoard {
 		FreeParkingCell freeParking = new FreeParkingCell();
 		RailRoadCell rr1 = new RailRoadCell();
 		RailRoadCell rr3 = new RailRoadCell();
-		UtilityCell u1 = new UtilityCell();
-		UtilityCell u2 = new UtilityCell();
+		Cell u1 = new UtilityCell();
+		Cell u2 = new UtilityCell();
 		
 		blue1.setName("Blue 1");
 		blue2.setName("Blue 2");

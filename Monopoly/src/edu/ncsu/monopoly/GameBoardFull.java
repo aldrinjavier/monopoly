@@ -14,7 +14,7 @@ public class GameBoardFull extends GameBoard {
         PropertyCell lb3 = new PropertyCell();
         JailCell jail = new JailCell();
         PropertyCell p1 = new PropertyCell();
-        UtilityCell u1 = new UtilityCell();
+        Cell u1 = new UtilityCell();
         PropertyCell p2 = new PropertyCell();
         PropertyCell p3 = new PropertyCell();
         RailRoadCell rr2 = new RailRoadCell();
@@ -30,7 +30,7 @@ public class GameBoardFull extends GameBoard {
         RailRoadCell rr3 = new RailRoadCell();
         PropertyCell y1 = new PropertyCell();
         PropertyCell y2 = new PropertyCell();
-        UtilityCell u2 = new UtilityCell();
+        Cell u2 = new UtilityCell();
         PropertyCell y3 = new PropertyCell();
         GoToJailCell goToJail = new GoToJailCell();
         PropertyCell g1 = new PropertyCell();

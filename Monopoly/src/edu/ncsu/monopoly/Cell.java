@@ -21,8 +21,6 @@ public abstract class Cell implements IOwnable {
 		return 0;
 	}
 
-	public abstract boolean playAction(String msg);
-
 	void setName(String name) {
 		this.name = name;
 	}
@@ -45,5 +43,15 @@ public abstract class Cell implements IOwnable {
 
 	public void setAvailable(boolean available) {
 		this.available = available;
+	}
+
+	public boolean playAction(String msg) {
+		boolean strFlag = false;
+		if(msg != null){
+			strFlag = true;
+		}else{
+			strFlag = false;
+		}
+		return strFlag;
 	}
 }
